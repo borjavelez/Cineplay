@@ -1,0 +1,15 @@
+C:\Users\Borja\source\repos\CinemaPlayerV\CinemaPlayerV\obj\Debug\CinemaPlayerV.csprojResolveAssemblyReference.cache
+C:\Users\Borja\source\repos\CinemaPlayerV\CinemaPlayerV\obj\Debug\CinemaPlayerV.Properties.Resources.resources
+C:\Users\Borja\source\repos\CinemaPlayerV\CinemaPlayerV\obj\Debug\CinemaPlayerV.csproj.GenerateResource.cache
+C:\Users\Borja\source\repos\CinemaPlayerV\CinemaPlayerV\obj\Debug\CinemaPlayerV.csproj.CoreCompileInputs.cache
+C:\Users\Borja\source\repos\CinemaPlayerV\CinemaPlayerV\bin\Debug\CinemaPlayerV.exe.config
+C:\Users\Borja\source\repos\CinemaPlayerV\CinemaPlayerV\bin\Debug\CinemaPlayerV.exe
+C:\Users\Borja\source\repos\CinemaPlayerV\CinemaPlayerV\bin\Debug\CinemaPlayerV.pdb
+C:\Users\Borja\source\repos\CinemaPlayerV\CinemaPlayerV\bin\Debug\Vlc.DotNet.Core.dll
+C:\Users\Borja\source\repos\CinemaPlayerV\CinemaPlayerV\bin\Debug\Vlc.DotNet.Core.Interops.dll
+C:\Users\Borja\source\repos\CinemaPlayerV\CinemaPlayerV\bin\Debug\Vlc.DotNet.Forms.dll
+C:\Users\Borja\source\repos\CinemaPlayerV\CinemaPlayerV\obj\Debug\CinemaPlayerV.csproj.CopyComplete
+C:\Users\Borja\source\repos\CinemaPlayerV\CinemaPlayerV\obj\Debug\CinemaPlayerV.exe
+C:\Users\Borja\source\repos\CinemaPlayerV\CinemaPlayerV\obj\Debug\CinemaPlayerV.pdb
+C:\Users\Borja\source\repos\CinemaPlayerV\CinemaPlayerV\obj\Debug\CinemaPlayerV.Form1.resources
+C:\Users\Borja\source\repos\CinemaPlayerV\CinemaPlayerV\bin\Debug\Vlc.DotNet.Wpf.dll

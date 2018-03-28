@@ -1,0 +1,4 @@
+C:\Users\Borja\Desktop\Cineplay\obj\x64\Debug\Cineplay.Form1.resources
+C:\Users\Borja\Desktop\Cineplay\obj\x64\Debug\CinemaPlayerV.Properties.Resources.resources
+C:\Users\Borja\Desktop\Cineplay\obj\x64\Debug\Cineplay.csproj.GenerateResource.cache
+C:\Users\Borja\Desktop\Cineplay\obj\x64\Debug\Cineplay.csproj.CoreCompileInputs.cache
