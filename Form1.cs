@@ -18,13 +18,11 @@ namespace Cineplay
         public Form1()
         {
             InitializeComponent();
-            var projectFolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-            this.myVlcControl.VlcLibDirectory = new DirectoryInfo(Path.Combine(projectFolder, @"libvlc"));
         }
 
         private void OnButtonPlayClicked(object sender, EventArgs e)
         {
-            FileInfo fileInfo = new FileInfo("C:\\test.mkv");
+            FileInfo fileInfo = new FileInfo("C:\\test2.mkv");
             Task.Run(() => myVlcControl.Play(fileInfo));
             
         }
@@ -151,6 +149,12 @@ namespace Cineplay
         private void button1_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show(myVlcControl.VlcMediaPlayer.Time.ToString());
+        }
+
+        private void myVlcControl_VlcLibDirectoryNeeded(object sender, VlcLibDirectoryNeededEventArgs e)
+        {
+            var projectFolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+            e.VlcLibDirectory = new DirectoryInfo(Path.Combine(projectFolder, @"libvlc\\x86"));
         }
     }
 }

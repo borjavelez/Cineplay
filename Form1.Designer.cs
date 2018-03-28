@@ -74,8 +74,9 @@ namespace Cineplay
             this.myVlcControl.Spu = -1;
             this.myVlcControl.TabIndex = 0;
             this.myVlcControl.Text = "vlcRincewindControl1";
-            this.myVlcControl.VlcLibDirectory = ((System.IO.DirectoryInfo)(resources.GetObject("myVlcControl.VlcLibDirectory")));
+            this.myVlcControl.VlcLibDirectory = null;
             this.myVlcControl.VlcMediaplayerOptions = null;
+            this.myVlcControl.VlcLibDirectoryNeeded += new System.EventHandler<Vlc.DotNet.Forms.VlcLibDirectoryNeededEventArgs>(this.myVlcControl_VlcLibDirectoryNeeded);
             this.myVlcControl.LengthChanged += new System.EventHandler<Vlc.DotNet.Core.VlcMediaPlayerLengthChangedEventArgs>(this.OnVlcMediaLengthChanged);
             this.myVlcControl.Log += new System.EventHandler<Vlc.DotNet.Core.VlcMediaPlayerLogEventArgs>(this.OnVlcMediaPlayerLog);
             this.myVlcControl.Paused += new System.EventHandler<Vlc.DotNet.Core.VlcMediaPlayerPausedEventArgs>(this.OnVlcPaused);
