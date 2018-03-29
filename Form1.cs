@@ -9,12 +9,15 @@ using Cineplay.Extensions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Threading;
+using Cineplay.SocketManager;
 
 namespace Cineplay
 {
     public partial class Form1 : Form
     {
-        bool isPlaying = false;
+        SocketClient sC;
+        SocketServer sS;
+
         public Form1()
         {
             InitializeComponent();
@@ -146,15 +149,53 @@ namespace Cineplay
             myVlcControl.Width = 1920;
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            MessageBox.Show(myVlcControl.VlcMediaPlayer.Time.ToString());
-        }
-
         private void myVlcControl_VlcLibDirectoryNeeded(object sender, VlcLibDirectoryNeededEventArgs e)
         {
             var projectFolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
             e.VlcLibDirectory = new DirectoryInfo(Path.Combine(projectFolder, @"libvlc\\x86"));
+        }
+
+        //Client button
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            sC = new SocketClient(this);
+        }
+
+        //Server button
+        private void button2_Click(object sender, EventArgs e)
+        {
+            sS = new SocketServer(this);
+        }
+
+        public void serverLabel(string a)
+        {
+            label5.InvokeIfRequired(l => l.Text = "Listening");
+        }
+
+        public void clientLabel(string a)
+        {
+            label4.InvokeIfRequired(l => l.Text = "Connected");
+        }
+
+        public void pause()
+        {
+            myVlcControl.Pause();
+        }
+
+        public void play()
+        {
+            myVlcControl.Play();
+        }
+
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            sC.sendCommand("play");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            sC.sendCommand("pause");
         }
     }
 }
